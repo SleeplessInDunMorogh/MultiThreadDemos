@@ -20,6 +20,7 @@ public class OddEvenObjectWaitNotifyDemo {
         while (i < 10) {
             synchronized (obj){
                 if (i % 2 == 1) {
+
                     //是奇数，我就打印
                     System.out.println(" "+Thread.currentThread().getName()+" 奇数 " + i);
                     i++;
